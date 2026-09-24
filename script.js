@@ -3,13 +3,13 @@
 // ALTERE OS DADOS ABAIXO
 // ========================================
 const COMPANY = {
-  name: "Nome da empresa",
-  phone: "",
-  whatsapp: "55XXXXXXXXXXX",
-  address: "Endereço não informado",
-  city: "Cidade/UF não informado",
-  hours: "Horário não informado",
-  instagram: ""
+  name: "D&E Poltronas",
+  phone: "62 99139-2645",
+  whatsapp: "5562991392645",
+  address: "Av. Madrid, Qd.174 - Lt.20 - Jardim Europa, 74330-550",
+  city: "Cidade/UF Goiania-GO",
+  hours: "08h as 18h",
+  instagram: "@deepoltronas"
 };
 
 const WHATSAPP_NUMBER = COMPANY.whatsapp;
