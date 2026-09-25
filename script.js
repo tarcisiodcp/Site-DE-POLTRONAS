@@ -19,9 +19,9 @@ const WHATSAPP_MESSAGE = "Olá! Gostaria de saber mais sobre o aluguel das poltr
 // CONFIGURAÇÕES DE PRODUTOS / GALERIA
 // ========================================
 const GALLERY = [
-  { src: "images/products/poltrona-eletrica.svg", alt: "Poltrona elétrica reclinável", caption: "Poltrona Elétrica" },
-  { src: "images/products/poltrona-lift.svg", alt: "Poltrona elétrica Lift", caption: "Poltrona Lift" },
-  { src: "images/products/poltrona-premium.svg", alt: "Poltrona premium reclinável", caption: "Poltrona Premium" }
+  { src: "poltrona-eletrica.svg", alt: "Poltrona elétrica reclinável", caption: "Poltrona Elétrica" },
+  { src: "poltrona-lift.svg", alt: "Poltrona elétrica Lift", caption: "Poltrona Lift" },
+  { src: "poltrona-premium.svg", alt: "Poltrona premium reclinável", caption: "Poltrona Premium" }
 ];
 
 // ========================================
