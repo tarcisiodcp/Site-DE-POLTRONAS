@@ -9,7 +9,7 @@ const COMPANY = {
   address: "Av. Madrid, Qd.174 - Lt.20 - Jardim Europa, 74330-550",
   city: "Cidade/UF Goiania-GO",
   hours: "08h as 18h",
-  instagram: "@deepoltronas"
+  instagram: "https://www.instagram.com/deepoltronas/"
 };
 
 const WHATSAPP_NUMBER = COMPANY.whatsapp;
