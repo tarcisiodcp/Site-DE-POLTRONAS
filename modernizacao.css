@@ -1,96 +1,128 @@
-/* ===================================================================
-   D&E POLTRONAS — modernizacao.css
-   Adicionado DEPOIS do style.css original.
-   Não remove nem altera os estilos e o JavaScript existentes.
-   Paleta: espresso profundo, bronze e marfim quente.
-   =================================================================== */
-:root {
-  --de-espresso: #352921;
-  --de-coffee: #47352b;
-  --de-brown: #66503e;
-  --de-bronze: #b27d42;
-  --de-gold: #d7ac70;
-  --de-cream: #faf6f0;
-  --de-linen: #f2eae0;
-  --de-border: #e2d4c6;
-  --de-ink: #2e2824;
-  --de-muted: #665b51;
+  .site-header .brand img { max-height: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .de-carousel-slide, .de-carousel-arrow, .de-carousel-dot, .product-card { transition: none !important; }
 }
 
-html { scroll-behavior: smooth; }
-body { background-color: var(--de-cream); color: var(--de-ink); }
-::selection { background: #e7c69b; color: #352921; }
-:focus-visible { outline: 3px solid var(--de-bronze); outline-offset: 3px; }
 
-/* Navegação original preservada: somente paleta, superfícies e acabamento */
-.site-header {
-  background: var(--de-espresso);
-  color: #fff8ed;
-  border-bottom: 1px solid rgba(255,255,255,.1);
-  box-shadow: 0 8px 28px rgba(44, 30, 22, .12);
+/* Compatibilidade com o menu mobile controlado pelo script.js original */
+.site-header .menu-toggle span { background: #fff8ed; }
+@media (max-width: 950px) {
+  .site-header .main-nav { background: #352921; border-bottom-color: rgba(255,255,255,.16); }
 }
-.site-header .brand, .site-header .brand strong, .site-header .brand small,
-.site-header .main-nav a:not(.nav-cta) { color: #fff8ed; }
-.site-header .brand small { color: #e5d4be; }
-.site-header .brand img { background: #fff5e8; border-radius: 9px; padding: 3px; box-sizing: border-box; }
-.site-header .main-nav a:not(.nav-cta):hover { color: #f3c98e; }
-.site-header .nav-cta { background: #c58e50; color: #2d1c13; border-color: #c58e50; border-radius: 999px; font-weight: 700; }
-.site-header .nav-cta:hover { background: #e1b274; color: #2d1c13; }
+/* Versões 1:1 mobile: indicadores abaixo do banner para não cobrir os textos da arte */
+@media (max-width: 640px) {
+  .de-carousel { display: flex; flex-direction: column; aspect-ratio: auto; }
+  .de-carousel-slides { position: relative; inset: auto; aspect-ratio: 1 / 1; height: auto; }
+  .de-carousel-controls { position: relative; inset: auto; left: auto; bottom: auto; transform: none; margin: 7px auto 9px; width: max-content; }
+  .de-carousel-arrow { top: 50vw; }
+}
 
-/* Carrossel: regras locais para evitar colisões com outros componentes */
-.hero.de-hero { background: var(--de-espresso); padding: 0; margin: 0; min-height: 0; display: block; overflow: hidden; }
-.hero.de-hero::before, .hero.de-hero::after { content: none; }
-.de-carousel {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  width: 100%;
-  aspect-ratio: 1580 / 700;
-  background: #d9b998;
+/* ============================================================
+   D&E POLTRONAS — ETAPA 01 / MOBILE
+   Cole este bloco AO FINAL de modernizacao.css.
+   Não substitua o arquivo existente.
+   Escopo: leitura e organização — sem alterar o carrossel.
+   ============================================================ */
+
+@media (max-width: 640px) {
+  /* Topo: títulos e mensagem mais confortáveis para ler */
+  .de-hero-message-grid {
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+  }
+
+  .de-hero-text h1 {
+    font-size: clamp(30px, 8.2vw, 39px);
+    line-height: 1.15;
+    letter-spacing: -0.035em;
+    overflow-wrap: normal;
+  }
+
+  .de-hero-text p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .de-hero-contact .hero-actions {
+    gap: 12px;
+  }
+
+  .de-hero-contact .button {
+    min-height: 54px;
+    padding: 12px 16px;
+    font-size: 15px;
+    line-height: 1.35;
+    white-space: normal;
+  }
+
+  .de-hero-contact .microcopy {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 14px;
+  }
+
+  /* Benefícios do topo: grade alinhada em duas colunas */
+  .de-hero-essentials {
+    padding-bottom: 28px;
+  }
+
+  .de-hero-essentials .feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    padding-top: 18px;
+    margin-bottom: 13px;
+  }
+
+  .de-hero-essentials .feature-list li {
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    margin: 0;
+    padding: 11px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .de-hero-essentials .feature-list li::before {
+    color: #efc78f;
+    flex: 0 0 auto;
+    margin-right: 8px;
+  }
+
+  .de-hero-essentials .feature-list li:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .de-hero-essentials .disclaimer {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  /* Ajuste discreto de legibilidade nas demais seções */
+  .section { padding-top: 68px; padding-bottom: 68px; }
+  .section h2 { font-size: clamp(29px, 7.6vw, 36px); line-height: 1.16; }
+  .section-heading p, .benefit-intro p, .faq-intro p,
+  .split-grid > div:first-child p { font-size: 16px; line-height: 1.65; }
+  .product-content p, .benefit-grid p, .process-list p,
+  .accordion details p { font-size: 15px; line-height: 1.6; }
+  .check-list, .tag-cloud span { font-size: 14px; }
+  .accordion summary { font-size: 16px; line-height: 1.4; }
+  .site-footer p, .footer-brand > p { font-size: 13px; }
+  .footer-bottom { font-size: 12px; }
 }
-.de-carousel-slides, .de-carousel-slide, .de-carousel-slide picture {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
+
+/* Aparelhos muito estreitos: impedir aperto das etiquetas */
+@media (max-width: 360px) {
+  .de-hero-essentials .feature-list {
+    grid-template-columns: 1fr;
+  }
+  .de-hero-essentials .feature-list li:last-child {
+    grid-column: auto;
+  }
 }
-.de-carousel-slide {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity .65s ease, visibility .65s ease;
-  margin: 0;
-}
-.de-carousel-slide.is-active { opacity: 1; visibility: visible; pointer-events: auto; z-index: 1; }
-.de-carousel-slide img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: center; }
-.de-carousel-arrow {
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 46px;
-  height: 46px;
-  padding: 0;
-  border: 1px solid rgba(255,255,255,.55);
-  border-radius: 50%;
-  background: rgba(47,32,24,.50);
-  backdrop-filter: blur(7px);
-  color: #fff;
-  cursor: pointer;
-  display: grid;
-  place-items: center;
-  transition: background .2s ease, transform .2s ease;
-}
-.de-carousel-arrow:hover { background: rgba(47,32,24,.82); transform: translateY(-50%) scale(1.06); }
-.de-carousel-arrow span { font-size: 37px; line-height: .7; position: relative; top: -2px; }
-.de-carousel-prev { left: clamp(10px, 2.6vw, 42px); }
-.de-carousel-next { right: clamp(10px, 2.6vw, 42px); }
-.de-carousel-controls {
-  position: absolute;
-  z-index: 3;
-  bottom: clamp(10px, 2.3vw, 28px);
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
