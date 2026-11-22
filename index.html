@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Aluguel de poltronas elétricas para pós-operatório. Consulte modelos, disponibilidade e condições de locação pelo WhatsApp.">
-  <meta name="theme-color" content="#23443f">
+  <meta name="theme-color" content="#352921">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Conforto para sua recuperação | Aluguel de poltronas">
   <meta property="og:description" content="Poltronas elétricas para uso residencial durante o período de recuperação.">
@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modernizacao.css">
+  <link rel="preload" href="banner-poltronas-01.webp" as="image" type="image/webp">
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -36,6 +38,13 @@
   </span>
 </a>
 
+      <!-- Botão do menu mobile exigido pelo script.js original -->
+      <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="mainNav" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
       <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
         <a href="#catalogo">Poltronas</a>
         <a href="#beneficios">Benefícios</a>
@@ -50,21 +59,63 @@
     <!-- ============================
          HERO PRINCIPAL
          ============================ -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <span class="eyebrow">Conforto pensado para a sua casa</span>
-          <h1>Mais conforto para sua <em>recuperação.</em></h1>
-          <p class="hero-lead">Alugue sua poltrona elétrica para o pós-operatório e tenha mais praticidade, autonomia e conforto durante o período de recuperação em casa.</p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#" data-whatsapp-link>Quero alugar uma poltrona <span aria-hidden="true">↗</span></a>
-            <a class="button button-ghost" href="#catalogo">Conhecer as poltronas</a>
+    <!-- ============================================================
+         NOVO TOPO | Carrossel de banners + chamada comercial
+         O carrossel usa arquivos próprios, sem alterar script.js.
+         ============================================================ -->
+    <section class="hero de-hero" aria-labelledby="de-hero-title">
+      <div class="de-carousel" id="deCarousel" role="region" aria-roledescription="carrossel" aria-label="Banners da D&E Poltronas">
+        <div class="de-carousel-slides">
+          <div class="de-carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 de 2" aria-hidden="false">
+            <picture>
+              <source media="(max-width: 640px)" srcset="banner-poltronas-mobile-01.webp" type="image/webp">
+              <source media="(max-width: 640px)" srcset="banner-poltronas-mobile-01.png" type="image/png">
+              <source srcset="banner-poltronas-01.webp" type="image/webp">
+              <img src="banner-poltronas-01.png" alt="D&E Poltronas: aluguel de poltronas elétricas para pós-operatório, com conforto, tecnologia, higienização e opções de entrega" width="1580" height="700" fetchpriority="high" decoding="async">
+            </picture>
           </div>
+          <div class="de-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 2" aria-hidden="true">
+            <picture>
+              <source media="(max-width: 640px)" srcset="banner-poltronas-mobile-02.webp" type="image/webp">
+              <source media="(max-width: 640px)" srcset="banner-poltronas-mobile-02.png" type="image/png">
+              <source srcset="banner-poltronas-02.webp" type="image/webp">
+              <img src="banner-poltronas-02.png" alt="Aluguel de poltronas para recuperação em casa: reclinação elétrica, conforto, higienização e atendimento personalizado" width="1580" height="700" loading="lazy" decoding="async">
+            </picture>
+          </div>
+        </div>
 
-          <p class="microcopy"><span class="dot"></span> Atendimento pelo WhatsApp · Consulte disponibilidade</p>
+        <button class="de-carousel-arrow de-carousel-prev" type="button" aria-label="Ver banner anterior" data-de-prev>
+          <span aria-hidden="true">‹</span>
+        </button>
+        <button class="de-carousel-arrow de-carousel-next" type="button" aria-label="Ver próximo banner" data-de-next>
+          <span aria-hidden="true">›</span>
+        </button>
+        <div class="de-carousel-controls" aria-label="Controles do carrossel">
+          <button class="de-carousel-dot is-active" type="button" aria-label="Ir para o banner 1" aria-current="true" data-de-dot="0"></button>
+          <button class="de-carousel-dot" type="button" aria-label="Ir para o banner 2" aria-current="false" data-de-dot="1"></button>
+          <button class="de-carousel-pause" type="button" aria-label="Pausar rotação dos banners" aria-pressed="false" data-de-pause>Pausar</button>
+        </div>
+        <span class="de-sr-only" aria-live="polite" aria-atomic="true" id="deCarouselStatus"></span>
+      </div>
 
-          <ul class="feature-list" aria-label="Recursos">
+      <!-- Conteúdo comercial original preservado abaixo dos banners -->
+      <div class="de-hero-message">
+        <div class="container de-hero-message-grid">
+          <div class="de-hero-text">
+            <span class="eyebrow">Conforto pensado para a sua casa</span>
+            <h1 id="de-hero-title">Mais conforto para sua <em>recuperação.</em></h1>
+            <p>Alugue sua poltrona elétrica para o pós-operatório e tenha mais praticidade, autonomia e conforto durante o período de recuperação em casa.</p>
+          </div>
+          <div class="de-hero-contact">
+            <div class="hero-actions">
+              <a class="button button-primary de-hero-primary" href="#" data-whatsapp-link>Quero alugar uma poltrona <span aria-hidden="true">↗</span></a>
+              <a class="button button-ghost de-hero-secondary" href="#catalogo">Conhecer as poltronas</a>
+            </div>
+            <p class="microcopy"><span class="dot"></span> Atendimento pelo WhatsApp · Consulte disponibilidade</p>
+          </div>
+        </div>
+        <div class="container de-hero-essentials">
+          <ul class="feature-list" aria-label="Recursos disponíveis">
             <li>Controle elétrico</li>
             <li>Reclinação</li>
             <li>Elevação das pernas</li>
@@ -72,16 +123,6 @@
             <li>Entrega e instalação*</li>
           </ul>
           <small class="disclaimer">* Serviços e regiões atendidas devem ser confirmados com a empresa.</small>
-        </div>
-
-        <div class="hero-visual">
-          <div class="image-frame">
-            <img src="poltrona-principal.svg" alt="Poltrona elétrica reclinável em ambiente residencial" fetchpriority="high">
-          </div>
-          <div class="floating-note">
-            <span class="note-icon">↘</span>
-            <span><strong>Feita para a rotina real</strong><small>Conforto e praticidade dentro de casa.</small></span>
-          </div>
         </div>
       </div>
     </section>
@@ -101,7 +142,7 @@
           <article class="product-card">
             <button class="product-image" type="button" data-gallery="0" aria-label="Ampliar foto da Poltrona Elétrica">
               <img src="poltrona-eletrica.svg" alt="Poltrona elétrica reclinável">
-              <span 
+              <span class="de-zoom" aria-hidden="true">↗</span>
             </button>
             <div class="product-content">
               <div class="product-kicker">Modelo 01</div>
@@ -122,7 +163,7 @@
             <div class="featured-tag">Mais autonomia</div>
             <button class="product-image" type="button" data-gallery="1" aria-label="Ampliar foto da Poltrona Lift">
               <img src="poltrona-lift.svg" alt="Poltrona elétrica Lift">
-              <span 
+              <span class="de-zoom" aria-hidden="true">↗</span>
             </button>
             <div class="product-content">
               <div class="product-kicker">Modelo 02</div>
@@ -142,7 +183,7 @@
           <article class="product-card">
             <button class="product-image" type="button" data-gallery="2" aria-label="Ampliar foto da Poltrona Premium">
               <img src="poltrona-premium.svg" alt="Poltrona premium reclinável em sala">
-              <span 
+              <span class="de-zoom" aria-hidden="true">↗</span>
             </button>
             <div class="product-content">
               <div class="product-kicker">Modelo 03</div>
@@ -426,5 +467,6 @@ A poltrona me ajudou muito no pós operatório ela foi minha amiga fiel rs rs ."
 </a>
 
   <script src="script.js" defer></script>
+  <script src="carrossel.js" defer></script>
 </body>
 </html>
