@@ -3,19 +3,167 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Aluguel de poltronas elétricas para pós-operatório. Consulte modelos, disponibilidade e condições de locação pelo WhatsApp.">
+  <meta name="description" content="Aluguel de poltronas elétricas para pós-operatório, idosos e recuperação em casa. Consulte modelos e disponibilidade pelo WhatsApp.">
   <meta name="theme-color" content="#352921">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Conforto para sua recuperação | Aluguel de poltronas">
-  <meta property="og:description" content="Poltronas elétricas para uso residencial durante o período de recuperação.">
+  <meta property="og:description" content="Poltronas elétricas para recuperação em casa e conforto de pessoas idosas.">
   <meta property="og:image" content="poltrona-principal.svg">
-  <title>Aluguel de Poltronas Elétricas para Pós-Operatório</title>
+  <title>Aluguel de Poltronas Elétricas para Pós-Operatório e Idosos | D&E</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="modernizacao.css">
   <link rel="preload" href="banner-poltronas-01.webp" as="image" type="image/webp">
+  <!-- CSS consolidado da nova seção para idosos e do contador. -->
+  <style id="de-consolidated-styles">
+/* D&E Poltronas — Etapa 03 | seção para idosos e responsáveis
+   Novo CSS independente. Não substitua modernizacao.css. */
+.de-seniors {
+  background: linear-gradient(130deg, #f3e8db 0%, #fbf7f0 78%);
+  padding: clamp(64px, 8vw, 108px) 0;
+  color: #392b23;
+}
+.de-seniors-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.07fr) minmax(0, .93fr);
+  align-items: center;
+  gap: clamp(30px, 6vw, 92px);
+}
+.de-seniors-eyebrow {
+  color: #9b6634;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.de-seniors h2 {
+  font-family: var(--font-heading, Manrope, sans-serif);
+  font-size: clamp(33px, 4vw, 54px);
+  line-height: 1.12;
+  letter-spacing: -.045em;
+  color: #3e2c20;
+  margin: 14px 0 22px;
+  max-width: 670px;
+}
+.de-seniors-copy p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #5b4d42;
+  margin: 0 0 15px;
+}
+.de-seniors-copy strong { color: #392b23; }
+.de-seniors .de-seniors-cta {
+  background: #4b3427;
+  color: #fff9ee;
+  min-height: 54px;
+  margin-top: 12px;
+  border: 1px solid #4b3427;
+  border-radius: 12px;
+  font-size: 15px;
+  text-align: center;
+  white-space: normal;
+}
+.de-seniors .de-seniors-cta:hover { background: #6c4b32; }
+.de-seniors-note {
+  display: block;
+  margin-top: 13px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #746557;
+}
+.de-seniors-highlights {
+  background: #fffdf9;
+  border: 1px solid #e7d7c4;
+  border-radius: 24px;
+  padding: clamp(22px, 3.5vw, 40px);
+  box-shadow: 0 16px 44px rgba(57, 37, 24, .08);
+}
+.de-seniors-item {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 14px;
+  padding: 21px 0;
+  border-bottom: 1px solid #e9ded1;
+}
+.de-seniors-item:first-child { padding-top: 0; }
+.de-seniors-item:last-child { padding-bottom: 0; border-bottom: 0; }
+.de-seniors-count {
+  font: 800 13px var(--font-heading, Manrope, sans-serif);
+  color: #a9763c;
+  padding-top: 4px;
+}
+.de-seniors-item h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #392b23;
+}
+.de-seniors-item p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: #6b5e51;
+}
+@media (max-width: 800px) {
+  .de-seniors-inner { grid-template-columns: 1fr; gap: 28px; }
+  .de-seniors h2 { font-size: clamp(31px, 8vw, 41px); }
+  .de-seniors-copy p { font-size: 16px; }
+  .de-seniors-item p { font-size: 15px; }
+}
+@media (max-width: 620px) {
+  .de-seniors { padding: 68px 0; }
+  .de-seniors-highlights { border-radius: 16px; padding: 23px; }
+  .de-seniors .de-seniors-cta { width: 100%; }
+}
+
+
+/* ================================================================
+   D&E | REVISÃO CONSOLIDADA 2026-11: seção idosos, galeria e prova social
+   Regras locais; style.css e modernizacao.css originais preservados.
+   ================================================================ */
+.de-proof-section { padding: clamp(54px, 7vw, 88px) 0; background: #eadaca; }
+.de-proof-inner { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(245px,.6fr); gap: 30px; align-items: center; }
+.de-proof-copy .eyebrow { color: #9b6634; }
+.de-proof-copy h2 { color: #392b23; max-width: 660px; font-size: clamp(30px,4vw,48px); line-height: 1.1; }
+.de-proof-copy p { max-width: 580px; color: #675647; font-size: 16px; margin: 0; }
+.de-proof-stats { display: flex; gap: 16px; flex-wrap: wrap; justify-content: flex-end; }
+.de-proof-stat { min-width: 155px; flex: 1; max-width: 230px; border-radius: 20px; background: #fffaf3; border: 1px solid #dbc6ad; padding: 23px; box-shadow: 0 8px 22px rgba(49,33,21,.06); }
+.de-proof-stat strong { display: block; color: #8a5928; font: 800 clamp(38px,4.4vw,52px)/1.1 'Manrope',system-ui,sans-serif; font-variant-numeric: tabular-nums; }
+.de-proof-stat span { display: block; color: #645244; font-size: 13px; font-weight: 600; line-height: 1.45; margin-top: 8px; }
+.de-proof-stat[hidden], .de-proof-toast[hidden] { display: none !important; }
+.de-proof-toast { position: fixed; z-index: 85; left: 17px; bottom: 20px; display: grid; grid-template-columns: 34px minmax(0,1fr) 19px; align-items: start; gap: 11px; width: min(345px,calc(100vw - 36px)); padding: 14px; border: 1px solid #d9c5aa; border-radius: 16px; background: rgba(255,250,244,.97); backdrop-filter: blur(12px); box-shadow: 0 12px 44px rgba(48,29,19,.22); color: #382b22; opacity: 0; transform: translateY(14px); transition: opacity .35s,transform .35s; pointer-events: none; }
+.de-proof-toast.is-visible { opacity: 1; transform: none; pointer-events: auto; }
+.de-toast-icon { border-radius: 50%; width: 34px; height: 34px; display: grid; place-items: center; color: #fff; background: #9a6735; font-size: 16px; }
+.de-toast-body { min-width: 0; }
+.de-toast-label { color: #91653c; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .045em; }
+.de-toast-body strong { display: block; font-size: 14px; line-height: 1.3; }
+.de-toast-body p { margin: 4px 0 0; font-size: 12px; line-height: 1.45; color: #5f5147; }
+.de-toast-close { width: 20px; height: 20px; padding: 0; background: transparent; border: 0; color: #6e5847; font-size: 21px; line-height: 1; cursor: pointer; }
+.de-carousel-pause { display:none !important; }
+/* Respeita o layout quadrado existente no mobile, sem cortar texto dos banners. */
+@media (max-width: 800px) {
+ .de-proof-inner { grid-template-columns: 1fr; }
+ .de-proof-stats { justify-content: flex-start; }
+ .de-proof-stat { min-width: 0; }
+}
+@media (max-width: 620px) {
+ .de-proof-section { padding: 64px 0; }
+ .de-proof-stat { max-width: none; }
+ .de-proof-toast { bottom: 79px; left: 12px; width: min(320px,calc(100vw - 92px)); padding: 12px; grid-template-columns: 28px minmax(0,1fr) 16px; gap: 8px; }
+ .de-toast-icon { width:28px;height:28px; }
+ .de-toast-body p { font-size: 11px; }
+ .de-toast-label { font-size: 10px; }
+ .de-hero-essentials .feature-list { display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px; }
+ .de-hero-essentials .feature-list li { font-size: 14px;min-height: 50px; display:flex;align-items:center; }
+ .de-hero-essentials .feature-list li:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 360px) { .de-hero-essentials .feature-list { grid-template-columns: 1fr; } .de-hero-essentials .feature-list li:last-child { grid-column:auto; } }
+@media (prefers-reduced-motion: reduce) { .de-proof-toast {transition:none !important;} }
+
+  </style>
+
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
@@ -48,6 +196,7 @@
       <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
         <a href="#catalogo">Poltronas</a>
         <a href="#beneficios">Benefícios</a>
+        <a href="#de-idosos">Para idosos</a>
         <a href="#como-funciona">Como funciona</a>
         <a href="#duvidas">Dúvidas</a>
         <a class="nav-cta" href="#" data-whatsapp-link>Falar no WhatsApp</a>
@@ -66,7 +215,7 @@
     <section class="hero de-hero" aria-labelledby="de-hero-title">
       <div class="de-carousel" id="deCarousel" role="region" aria-roledescription="carrossel" aria-label="Banners da D&E Poltronas">
         <div class="de-carousel-slides">
-          <div class="de-carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 de 2" aria-hidden="false">
+          <div class="de-carousel-slide is-active" role="group" aria-roledescription="slide" aria-label="1 de 3" aria-hidden="false">
             <picture>
               <source media="(max-width: 640px)" srcset="banner-poltronas-mobile-01.webp" type="image/webp">
               <source media="(max-width: 640px)" srcset="banner-poltronas-mobile-01.png" type="image/png">
@@ -74,12 +223,19 @@
               <img src="banner-poltronas-01.png" alt="D&E Poltronas: aluguel de poltronas elétricas para pós-operatório, com conforto, tecnologia, higienização e opções de entrega" width="1580" height="700" fetchpriority="high" decoding="async">
             </picture>
           </div>
-          <div class="de-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 2" aria-hidden="true">
+          <div class="de-carousel-slide" role="group" aria-roledescription="slide" aria-label="2 de 3" aria-hidden="true">
             <picture>
               <source media="(max-width: 640px)" srcset="banner-poltronas-mobile-02.webp" type="image/webp">
               <source media="(max-width: 640px)" srcset="banner-poltronas-mobile-02.png" type="image/png">
               <source srcset="banner-poltronas-02.webp" type="image/webp">
               <img src="banner-poltronas-02.png" alt="Aluguel de poltronas para recuperação em casa: reclinação elétrica, conforto, higienização e atendimento personalizado" width="1580" height="700" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <!-- Banner 03: idosos. A versão mobile é carregada automaticamente pelo picture. -->
+          <div class="de-carousel-slide" role="group" aria-roledescription="slide" aria-label="3 de 3" aria-hidden="true">
+            <picture>
+              <source media="(max-width: 640px)" srcset="banner-idosos-mobile.webp" type="image/webp">
+              <img src="banner-idosos-desktop.webp" alt="Pessoa idosa em uma poltrona elétrica reclinável; conforto para a rotina em casa" width="1884" height="835" loading="lazy" decoding="async">
             </picture>
           </div>
         </div>
@@ -93,7 +249,7 @@
         <div class="de-carousel-controls" aria-label="Controles do carrossel">
           <button class="de-carousel-dot is-active" type="button" aria-label="Ir para o banner 1" aria-current="true" data-de-dot="0"></button>
           <button class="de-carousel-dot" type="button" aria-label="Ir para o banner 2" aria-current="false" data-de-dot="1"></button>
-          <button class="de-carousel-pause" type="button" aria-label="Pausar rotação dos banners" aria-pressed="false" data-de-pause>Pausar</button>
+          <button class="de-carousel-dot" type="button" aria-label="Ir para o banner 3" aria-current="false" data-de-dot="2"></button>
         </div>
         <span class="de-sr-only" aria-live="polite" aria-atomic="true" id="deCarouselStatus"></span>
       </div>
@@ -104,7 +260,7 @@
           <div class="de-hero-text">
             <span class="eyebrow">Conforto pensado para a sua casa</span>
             <h1 id="de-hero-title">Mais conforto para sua <em>recuperação.</em></h1>
-            <p>Alugue sua poltrona elétrica para o pós-operatório e tenha mais praticidade, autonomia e conforto durante o período de recuperação em casa.</p>
+            <p>Alugue uma poltrona elétrica para o pós-operatório ou para proporcionar mais conforto à rotina de pessoas idosas. Consulte os modelos e as condições de locação com nossa equipe.</p>
           </div>
           <div class="de-hero-contact">
             <div class="hero-actions">
@@ -262,7 +418,26 @@
         <div class="tag-cloud" aria-label="Situações em que a poltrona pode ser procurada">
           <span>Cirurgias plásticas</span><span>Abdominoplastia</span><span>Lipoaspiração</span><span>Mamoplastia</span>
           <span>Mastopexia</span><span>Cirurgias ortopédicas</span><span>Joelho</span><span>Quadril</span>
-          <span>Coluna</span><span>Fraturas</span><span>Pós-parto</span><span>Mobilidade reduzida</span>
+          <span>Coluna</span><span>Fraturas</span><span>Pós-parto</span><span>Mobilidade reduzida</span><span>Idosos</span><span>Familiares e cuidadores</span>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="de-seniors" id="de-idosos" aria-labelledby="de-seniors-title">
+      <div class="container de-seniors-inner">
+        <div class="de-seniors-copy">
+          <span class="de-seniors-eyebrow">Para idosos e familiares</span>
+          <h2 id="de-seniors-title">Mais conforto para quem você ama.</h2>
+          <p>A locação de uma poltrona elétrica também pode trazer mais praticidade à rotina de pessoas idosas e de quem cuida delas. Conheça os modelos e converse com nossa equipe sobre o uso em casa.</p>
+          <p>Para quem precisa de auxílio ao sentar e levantar, pergunte sobre a <strong>Poltrona Lift</strong> e seus recursos. A escolha depende das necessidades de cada pessoa e das orientações dos profissionais responsáveis.</p>
+          <a class="button de-seniors-cta" href="#" data-whatsapp-link>Consultar poltronas para idosos <span aria-hidden="true">↗</span></a>
+          <small class="de-seniors-note">Recursos, disponibilidade, condições e região de atendimento devem ser confirmados com a equipe.</small>
+        </div>
+        <div class="de-seniors-highlights" aria-label="Diferenciais da locação">
+          <article class="de-seniors-item"><span class="de-seniors-count" aria-hidden="true">01</span><div><h3>Conforto no descanso</h3><p>Opções de reclinação e apoio para as pernas, conforme o modelo escolhido.</p></div></article>
+          <article class="de-seniors-item"><span class="de-seniors-count" aria-hidden="true">02</span><div><h3>Praticidade para a família</h3><p>Locação para uso em casa, com informações sobre utilização e entrega combinadas com a equipe.</p></div></article>
+          <article class="de-seniors-item"><span class="de-seniors-count" aria-hidden="true">03</span><div><h3>Opção com sistema Lift</h3><p>Há modelo com mecanismo de auxílio ao movimento de sentar e levantar. Consulte a disponibilidade.</p></div></article>
         </div>
       </div>
     </section>
@@ -288,6 +463,32 @@
       </div>
     </section>
 
+    <!-- =======================================================
+         CONTADOR DE PROVA SOCIAL
+         Contamos depoimentos REAIS exibidos na página (3), e NÃO
+         inventamos quantidade de contratos ou falsas reservas.
+         A contagem de LOCAÇÕES só aparece quando cadastrada abaixo.
+         ======================================================= -->
+    <section class="de-proof-section" id="atividade" aria-labelledby="de-proof-title">
+      <div class="container de-proof-inner">
+        <div class="de-proof-copy">
+          <span class="eyebrow">Experiências compartilhadas</span>
+          <h2 id="de-proof-title">Conforto também é confiança.</h2>
+          <p>Conheça experiências de clientes que já compartilharam seus relatos sobre a locação.</p>
+        </div>
+        <div class="de-proof-stats">
+          <div class="de-proof-stat">
+            <strong id="de-testimonials-total" data-target="3">3</strong>
+            <span>depoimentos publicados nesta página</span>
+          </div>
+          <div class="de-proof-stat" id="de-rentals-stat" hidden>
+            <strong id="de-rentals-total"></strong>
+            <span>locações confirmadas pela empresa</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================
          DEPOIMENTOS
          ============================ -->
@@ -305,7 +506,7 @@
   <!-- Avaliação 1 -->
   <div style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-      <div style="width: 40px; height: 40px; background: #164e43; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px;">
+      <div style="width: 40px; height: 40px; background: #6c4b32; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px;">
         <!-- Troque a letra "C" pela primeira letra do nome do cliente 1 -->
         F
       </div>
@@ -325,7 +526,7 @@ Adotei e super indico de olhos fechados!!!!!"</p>
   <!-- Avaliação 2 -->
   <div style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-      <div style="width: 40px; height: 40px; background: #164e43; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px;">
+      <div style="width: 40px; height: 40px; background: #6c4b32; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px;">
         <!-- Troque a letra "C" pela primeira letra do nome do cliente 2 -->
         M
       </div>
@@ -345,7 +546,7 @@ Sem dúvida, foi um item totalmente necessário para o meu pós-operatório — 
   <!-- Avaliação 3 -->
   <div style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
     <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
-      <div style="width: 40px; height: 40px; background: #164e43; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px;">
+      <div style="width: 40px; height: 40px; background: #6c4b32; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px;">
         <!-- Troque a letra "C" pela primeira letra do nome do cliente 3 -->
         T
       </div>
@@ -392,6 +593,7 @@ A poltrona me ajudou muito no pós operatório ela foi minha amiga fiel rs rs ."
           <details><summary>Quais formas de pagamento são aceitas?</summary><p>À vista, PIX ou cartão de crédito ou débito.</p></details>
           <details><summary>Vocês atendem minha cidade?</summary><p>Informe sua cidade no WhatsApp para verificarmos a área de atendimento e as condições de entrega.</p></details>
           <details><summary>Como faço para reservar?</summary><p>Clique em qualquer botão de WhatsApp, informe o período desejado e sua cidade e siga as orientações da equipe.</p></details>
+          <details id="de-faq-idosos"><summary>Vocês alugam poltronas para idosos?</summary><p>Sim. Também atendemos pessoas idosas e familiares que procuram conforto para a rotina em casa. Nossa equipe explica os modelos e a disponibilidade. O auxílio para sentar e levantar é específico dos modelos com sistema Lift.</p></details>
         </div>
       </div>
     </section>
@@ -449,6 +651,17 @@ A poltrona me ajudou muito no pós operatório ela foi minha amiga fiel rs rs ."
     </div>
   </footer>
 
+  <!-- Notificações de experiências já publicadas; não fingem locações recentes. -->
+  <aside class="de-proof-toast" id="de-proof-toast" aria-label="Depoimento publicado" hidden>
+    <div class="de-toast-icon" aria-hidden="true">★</div>
+    <div class="de-toast-body">
+      <span class="de-toast-label" id="de-toast-label">Relato de cliente</span>
+      <strong id="de-toast-name"></strong>
+      <p id="de-toast-quote"></p>
+    </div>
+    <button class="de-toast-close" type="button" aria-label="Fechar aviso de cliente">×</button>
+  </aside>
+
   <!-- Modal / Galeria -->
   <div class="gallery-modal" id="galleryModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Visualização da poltrona">
     <button class="modal-close" type="button" aria-label="Fechar galeria">×</button>
@@ -466,8 +679,218 @@ A poltrona me ajudou muito no pós operatório ela foi minha amiga fiel rs rs ."
   </svg>
 </a>
 
+  <!-- Script original preservado: empresa, WhatsApp, menu e modal -->
   <script src="script.js" defer></script>
-  <script src="carrossel.js" defer></script>
-  <script src="galeria-fotos.js" defer></script>
+  <!-- Integrações consolidadas: carrossel, fotos adicionais e prova social -->
+  <script id="de-consolidated-scripts">
+function initDeCarousel() {
+  const carousel = document.getElementById('deCarousel');
+  if (!carousel) return;
+  const slides = Array.from(carousel.querySelectorAll('.de-carousel-slide'));
+  const dots = Array.from(carousel.querySelectorAll('[data-de-dot]'));
+  const prev = carousel.querySelector('[data-de-prev]');
+  const next = carousel.querySelector('[data-de-next]');
+  const status = document.getElementById('deCarouselStatus');
+  if (!slides.length || dots.length !== slides.length) return;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let current = 0, timer = null, startTouch = null;
+  function show(index, announce=false) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide,i)=>{
+      const active = i===current;
+      slide.classList.toggle('is-active',active);
+      slide.setAttribute('aria-hidden',String(!active));
+    });
+    dots.forEach((dot,i)=>{
+      dot.classList.toggle('is-active',i===current);
+      dot.setAttribute('aria-current',String(i===current));
+    });
+    if (announce && status) status.textContent = `Banner ${current+1} de ${slides.length}`;
+  }
+  function restart() {
+    if (timer) {clearInterval(timer);timer=null;}
+    if (slides.length>1 && !document.hidden && !reducedMotion.matches) {
+      timer=setInterval(()=>show(current+1),6000);
+    }
+  }
+  const navigate = (delta)=>{show(current+delta,true);restart();};
+  prev?.addEventListener('click',()=>navigate(-1));
+  next?.addEventListener('click',()=>navigate(1));
+  dots.forEach((dot,i)=>dot.addEventListener('click',()=>{show(i,true);restart();}));
+  carousel.addEventListener('touchstart',e=>{
+    if (e.touches.length===1) startTouch={x:e.touches[0].clientX,y:e.touches[0].clientY};
+  },{passive:true});
+  carousel.addEventListener('touchend',e=>{
+    if(!startTouch||!e.changedTouches.length)return;
+    const dx=e.changedTouches[0].clientX-startTouch.x,dy=e.changedTouches[0].clientY-startTouch.y;
+    startTouch=null;
+    if(Math.abs(dx)>45 && Math.abs(dx)>Math.abs(dy)*1.3)navigate(dx<0?1:-1);
+  },{passive:true});
+  document.addEventListener('visibilitychange',restart);
+  reducedMotion.addEventListener?.('change',restart);
+  show(0); restart();
+}
+function initDeGallery() {
+  'use strict';
+
+  // O script.js original deve carregar antes deste arquivo.
+  if (typeof GALLERY === 'undefined' || !Array.isArray(GALLERY)) return;
+  const modal = document.getElementById('galleryModal');
+  const modalImage = document.getElementById('modalImage');
+  const cards = Array.from(document.querySelectorAll('.product-card .product-image[data-gallery]'));
+  if (!modal || !modalImage || cards.length !== 3) return;
+
+  // Cada grupo contém a imagem original e uma foto REAL adicional.
+  // OBS.: a associação de foto a modelo é PROVISÓRIA. Verificar com a D&E.
+  const grupos = [
+    [
+      { src: 'poltrona-eletrica.svg', alt: 'Imagem de catálogo da Poltrona Elétrica', caption: 'Poltrona Elétrica · imagem do catálogo' },
+      { src: 'foto-poltrona-caramelo.webp', alt: 'Fotografia real de poltrona caramelo do acervo D&E Poltronas', caption: 'Foto real do acervo D&E · Confirme modelo e características pelo WhatsApp' }
+    ],
+    [
+      { src: 'poltrona-lift.svg', alt: 'Imagem de catálogo da Poltrona Lift', caption: 'Poltrona Lift · imagem do catálogo' },
+      { src: 'foto-poltrona-marrom.webp', alt: 'Fotografia real de poltrona marrom do acervo D&E Poltronas', caption: 'Foto real do acervo D&E · Confirme modelo e características pelo WhatsApp' }
+    ],
+    [
+      { src: 'poltrona-premium.svg', alt: 'Imagem de catálogo da Poltrona Premium', caption: 'Poltrona Premium · imagem do catálogo' },
+      { src: 'foto-poltrona-cinza.webp', alt: 'Fotografia real de poltrona cinza do acervo D&E Poltronas', caption: 'Foto real do acervo D&E · Confirme modelo e características pelo WhatsApp' }
+    ]
+  ];
+
+  // Estilos isolados da galeria: não altera o modernizacao.css reparado.
+  const style = document.createElement('style');
+  style.id = 'de-galeria-estilos';
+  style.textContent = `
+    .de-fotos-badge {position:absolute;bottom:14px;left:14px;z-index:2;
+      padding:7px 12px;border-radius:999px;background:rgba(53,41,33,.89);
+      color:#fff9ee;font:700 12px/1.3 'DM Sans',system-ui,sans-serif;
+      box-shadow:0 3px 10px rgba(0,0,0,.12);pointer-events:none}
+    .de-modal-count {margin:8px 0 0;text-align:center;color:#f8eddf;
+      font:600 13px/1.4 'DM Sans',system-ui,sans-serif}
+    @media(max-width:620px){.de-fotos-badge{left:10px;bottom:10px;font-size:13px}}
+  `;
+  document.head.appendChild(style);
+
+  const counter = document.createElement('div');
+  counter.className = 'de-modal-count';
+  counter.setAttribute('aria-live', 'polite');
+  counter.textContent = '1 de 2 fotos · Deslize para ver mais';
+  modal.querySelector('figure')?.appendChild(counter);
+
+  const findCurrent = () => GALLERY.findIndex(item => item.src === modalImage.getAttribute('src'));
+  const refreshCounter = () => {
+    const idx = findCurrent();
+    if (idx !== -1) counter.textContent = `${idx + 1} de ${GALLERY.length} fotos · Deslize ou use as setas`;
+  };
+  new MutationObserver(refreshCounter).observe(modalImage, { attributes: true, attributeFilter: ['src'] });
+
+  cards.forEach((button, idx) => {
+    button.dataset.deModelo = String(idx);
+    button.setAttribute('aria-label', `${button.getAttribute('aria-label') || 'Ver fotos'} · 2 imagens`);
+    const badge = document.createElement('span');
+    badge.className = 'de-fotos-badge';
+    badge.textContent = 'Ver 2 fotos';
+    badge.setAttribute('aria-hidden', 'true');
+    button.appendChild(badge);
+
+    // O script original usa a fase de bolha. Aqui usamos captura para
+    // preparar GALLERY antes que ele abra a imagem do produto.
+    button.addEventListener('click', () => {
+      GALLERY.splice(0, GALLERY.length, ...grupos[idx].map(item => ({ ...item })));
+      button.dataset.gallery = '0';
+      counter.textContent = '1 de 2 fotos · Deslize ou use as setas';
+    }, { capture: true });
+  });
+
+  let startX = null;
+  let startY = null;
+  modal.addEventListener('touchstart', (event) => {
+    if (!event.target.closest('figure') || event.touches.length !== 1) return;
+    startX = event.touches[0].clientX;
+    startY = event.touches[0].clientY;
+  }, { passive: true });
+  modal.addEventListener('touchend', (event) => {
+    if (startX === null || !event.changedTouches.length) return;
+    const dx = event.changedTouches[0].clientX - startX;
+    const dy = event.changedTouches[0].clientY - startY;
+    startX = startY = null;
+    if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.3 && typeof moveGallery === 'function') {
+      moveGallery(dx < 0 ? 1 : -1);
+    }
+  }, { passive: true });
+
+  // Se alguma foto adicional não estiver publicada, não deixa um quadro quebrado.
+  modalImage.addEventListener('error', () => {
+    if (findCurrent() > 0 && GALLERY[0]) {
+      modalImage.src = GALLERY[0].src;
+      const caption = document.getElementById('modalCaption');
+      if (caption) caption.textContent = 'Foto adicional indisponível no momento';
+    }
+  });
+
+}
+
+function initDeSocialProof() {
+  // EDITE SOMENTE COM DADOS REAIS:
+  // totalConfirmado: número verificado de contratos concluídos;
+  // locacoesRecentes: eventos com autorização explícita de publicação.
+  // Sem essa informação, a seção conta APENAS os três depoimentos da página.
+  const DADOS_REAIS = {
+    totalConfirmado: null,
+    locacoesRecentes: [] // Ex.: {nome: 'Primeiro nome autorizado', cidade: 'Goiânia', autorizado: true}
+  };
+  const testimonialCards = Array.from(document.querySelectorAll('.testimonials-section h3'));
+  const count = testimonialCards.length;
+  const testimonialNumber = document.getElementById('de-testimonials-total');
+  if (testimonialNumber) testimonialNumber.textContent = String(count).padStart(2,'0');
+  const rentalStat = document.getElementById('de-rentals-stat');
+  const rentalTotal = document.getElementById('de-rentals-total');
+  if (Number.isInteger(DADOS_REAIS.totalConfirmado) && DADOS_REAIS.totalConfirmado>=0 && rentalStat && rentalTotal) {
+    rentalTotal.textContent = new Intl.NumberFormat('pt-BR').format(DADOS_REAIS.totalConfirmado);
+    rentalStat.hidden = false;
+  }
+  const toast = document.getElementById('de-proof-toast');
+  const label = document.getElementById('de-toast-label');
+  const name = document.getElementById('de-toast-name');
+  const quote = document.getElementById('de-toast-quote');
+  const close = toast?.querySelector('.de-toast-close');
+  if (!toast || !label || !name || !quote) return;
+  // Os relatos abaixo já constam publicamente na seção de depoimentos deste site.
+  const relatos = [
+    { nome: 'Fabiana Barbosa', mensagem: 'Relatou mais praticidade durante a recuperação.' },
+    { nome: 'Marília Marques', mensagem: 'Comentou sobre o atendimento e a entrega da poltrona.' },
+    { nome: 'Thays Silva', mensagem: 'Compartilhou sua experiência com a poltrona no pós-operatório.' }
+  ];
+  const eventos = DADOS_REAIS.locacoesRecentes.filter(e=>e && e.autorizado===true && typeof e.nome==='string' && e.nome.trim());
+  const messages = eventos.length
+    ? eventos.map(e=>({ tipo:'Locação confirmada', nome:e.nome.trim(), mensagem: e.cidade ? `Locação na região de ${e.cidade}.` : 'Locação confirmada pela equipe.' }))
+    : relatos.map(r=>({tipo:'Depoimento publicado',nome:r.nome,mensagem:r.mensagem}));
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (reduced.matches || !messages.length) return;
+  let nextIndex=0, closed=false, showTimer=null, hideTimer=null;
+  function hide(){toast.classList.remove('is-visible');setTimeout(()=>{if(!toast.classList.contains('is-visible'))toast.hidden=true;},380);}
+  function display(){
+    if(closed||document.hidden)return;
+    const msg=messages[nextIndex++];
+    if(!msg)return;
+    label.textContent=msg.tipo;name.textContent=msg.nome;quote.textContent=msg.mensagem;
+    toast.hidden=false;
+    window.requestAnimationFrame(()=>toast.classList.add('is-visible'));
+    hideTimer=setTimeout(hide,6200);
+    if(nextIndex<messages.length)showTimer=setTimeout(display,22000);
+  }
+  // Uma exibição breve e discreta; nunca afirma que alguém 'acabou de alugar' sem registro real.
+  showTimer=setTimeout(display,8500);
+  close?.addEventListener('click',()=>{
+    closed=true;clearTimeout(showTimer);clearTimeout(hideTimer);hide();
+  });
+}
+
+  document.addEventListener('DOMContentLoaded', () => {
+    initDeCarousel();
+    initDeGallery();
+    initDeSocialProof();
+  });
+  </script>
 </body>
 </html>
