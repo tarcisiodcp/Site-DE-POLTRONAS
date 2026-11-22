@@ -210,3 +210,47 @@ body { background-color: var(--de-cream); color: var(--de-ink); }
   .de-carousel-controls { position: relative; inset: auto; left: auto; bottom: auto; transform: none; margin: 7px auto 9px; width: max-content; }
   .de-carousel-arrow { top: 50vw; }
 }
+
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .de-hero-essentials .feature-list li::before {
+    color: #efc78f;
+    flex: 0 0 auto;
+    margin-right: 8px;
+  }
+
+  .de-hero-essentials .feature-list li:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .de-hero-essentials .disclaimer {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  /* Ajuste discreto de legibilidade nas demais seções */
+  .section { padding-top: 68px; padding-bottom: 68px; }
+  .section h2 { font-size: clamp(29px, 7.6vw, 36px); line-height: 1.16; }
+  .section-heading p, .benefit-intro p, .faq-intro p,
+  .split-grid > div:first-child p { font-size: 16px; line-height: 1.65; }
+  .product-content p, .benefit-grid p, .process-list p,
+  .accordion details p { font-size: 15px; line-height: 1.6; }
+  .check-list, .tag-cloud span { font-size: 14px; }
+  .accordion summary { font-size: 16px; line-height: 1.4; }
+  .site-footer p, .footer-brand > p { font-size: 13px; }
+  .footer-bottom { font-size: 12px; }
+}
+
+/* Aparelhos muito estreitos: impedir aperto das etiquetas */
+@media (max-width: 360px) {
+  .de-hero-essentials .feature-list {
+    grid-template-columns: 1fr;
+  }
+  .de-hero-essentials .feature-list li:last-child {
+    grid-column: auto;
+  }
+}
